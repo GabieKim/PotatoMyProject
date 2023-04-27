@@ -26,4 +26,11 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	
+public: // 일단 쉬우니까 퍼블릭으로 해봄
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Component")
+	class USpringArmComponent* SpringArm;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Component")
+	class UCameraComponent* Camera;
 };

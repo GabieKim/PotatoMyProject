@@ -10,8 +10,11 @@
  * 
  */
 UCLASS()
-class MYPROJECT_API AMyGameModeBase : public AGameModeBase
+class  AMyGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
-	
+
+public:
+	// 생성자 추가함
+	AMyGameModeBase();
 };

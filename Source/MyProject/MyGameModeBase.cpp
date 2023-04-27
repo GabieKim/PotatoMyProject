@@ -2,4 +2,11 @@
 
 
 #include "MyGameModeBase.h"
+#include "MyPlayerController.h"
+#include "MyCharacter.h"
 
+AMyGameModeBase::AMyGameModeBase()
+{
+	PlayerControllerClass = AMyPlayerController::StaticClass();
+	DefaultPawnClass = AMyCharacter::StaticClass();
+}
